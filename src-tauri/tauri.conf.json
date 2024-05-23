@@ -7,7 +7,7 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "template-tauri-vite-react-ts-tailwind",
+    "productName": "tauri-d3js",
     "version": "0.1.0"
   },
   "tauri": {
