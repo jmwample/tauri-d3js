@@ -26,6 +26,9 @@ A personal toy example project using:
 
 **TODO**:
 - [ ] Try migrating to the tauri-v2 build. [guide](https://v2.tauri.app/start/migrate/from-tauri-1/)
+- [ ] Check through the `npm outdated` packages
+- [ ] Get D3js example working
+- [ ] Do some async work in rust!
 
 ## Install Dependencies
 
