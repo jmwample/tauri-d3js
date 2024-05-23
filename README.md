@@ -1,11 +1,11 @@
 # Tauri + D3js Playground
 
 <p>
-  <a href="https://github.com/jmwample/ptrs/actions/workflows/rust.yml">
-    <img src="https://github.com/jmwample/ptrs/actions/workflows/rust.yml/badge.svg?branch=main" alt="Build Status">
+  <a href="https://github.com/jmwample/tauri-d3js/actions/workflows/publish.yml">
+    <img src="https://github.com/jmwample/tauri-d3js/actions/workflows/publish.yml/badge.svg?branch=main" alt="Build Status">
   </a>
   <a href="https://doc.rust-lang.org/1.6.0/complement-project-faq.html#why-dual-mitasl2-license">
-    <img src="https://img.shields.io/badge/license-MIT%2FApache--2.0-blue" alt="License: MIT/Apache 2.0">
+    <img src="https://img.shields.io/badge/License-MIT%2FApache--2.0-blue" alt="License: MIT/Apache 2.0">
   </a>
 </p>
 
@@ -21,6 +21,7 @@ A personal toy example project using:
 - Multiple eslint & prettier plugins installed
 - D3js
 
+- [ ] TODO: try migrating to the tauri-v2 build. [guide](https://v2.tauri.app/start/migrate/from-tauri-1/)
 
 ## Install Dependencies
 
