@@ -1,5 +1,13 @@
 # Tauri + D3js Playground
 
+<p>
+  <a href="https://github.com/jmwample/ptrs/actions/workflows/rust.yml">
+    <img src="https://github.com/jmwample/ptrs/actions/workflows/rust.yml/badge.svg?branch=main" alt="Build Status">
+  </a>
+  <a href="https://doc.rust-lang.org/1.6.0/complement-project-faq.html#why-dual-mitasl2-license">
+    <img src="https://img.shields.io/badge/license-MIT%2FApache--2.0-blue" alt="License: MIT/Apache 2.0">
+  </a>
+</p>
 
 ## Introduction
 
@@ -63,4 +71,4 @@ src-tauri/target/release/bundle/
 
 <div align="center"><img src = "https://github.com/RoyRao2333/template-tauri-vite-react-ts-tailwind/assets/31413093/91cdcd1b-2387-4c01-9710-9b2f44c10329" height="100px" alt="Tauri"/><img src = "https://user-images.githubusercontent.com/31413093/197097625-5b3bd3cf-2bd6-4a3a-8059-a1fe9f28100b.svg" height="100px" alt="Vite"/></div>
 
-This project is based on the [template-tauri-vite-react-ts-tailwind template](https://github.com/RoyRao2333/template-tauri-vite-react-ts-tailwind).
+This project is based on [template-tauri-vite-react-ts-tailwind](https://github.com/RoyRao2333/template-tauri-vite-react-ts-tailwind).
