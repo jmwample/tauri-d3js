@@ -21,7 +21,8 @@ A personal toy example project using:
 - Multiple eslint & prettier plugins installed
 - D3js
 
-- [ ] TODO: try migrating to the tauri-v2 build. [guide](https://v2.tauri.app/start/migrate/from-tauri-1/)
+**TODO**:
+- [ ] Try migrating to the tauri-v2 build. [guide](https://v2.tauri.app/start/migrate/from-tauri-1/)
 
 ## Install Dependencies
 
