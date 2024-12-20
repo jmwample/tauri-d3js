@@ -23,10 +23,24 @@ Currently, two official plugins are available:
 
 ## Install Dependencies
 
+Install package dependecies
+
+```sh
+sudo apt update
+sudo apt install libwebkit2gtk-4.1-dev \
+  build-essential \
+  curl \
+  wget \
+  file \
+  libxdo-dev \
+  libssl-dev \
+  libayatana-appindicator3-dev \
+  librsvg2-dev
+```
+
 > This project uses [pnpm](https://pnpm.io/) as its package manager. To install dependecies:
 
 ```sh
-$ sudo apt-get install libglib2.0-dev libgtk-3-dev libsoup2.4
 $ pnpm install
 ```
 
