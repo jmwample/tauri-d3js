@@ -35,6 +35,7 @@ A personal toy example project using:
 > This project uses [pnpm](https://pnpm.io/) as its package manager. To install dependecies:
 
 ```sh
+$ sudo apt-get install libglib2.0-dev libgtk-3-dev libsoup2.4
 $ pnpm install
 ```
 
