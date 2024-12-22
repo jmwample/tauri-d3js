@@ -9,6 +9,9 @@ function MenuBar() {
           <Link to="/">Home</Link>
         </li>
         <li>
+          <Link to="/draft">Editor</Link>
+        </li>
+        <li>
           <Link to="/pie-chart">Pie Chart</Link>
         </li>
         <li>
