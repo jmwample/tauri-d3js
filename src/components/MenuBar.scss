@@ -1,0 +1,35 @@
+$background-color: #333;
+$hover-background-color: #111;
+$text-color: white;
+$padding: 14px 16px;
+
+.menu-bar {
+  background-color: $background-color;
+  overflow: hidden;
+  position: fixed; // Add this line
+  top: 0; // Add this line
+  width: 100%; // Add this line
+  z-index: 1000; // Add this line to ensure it stays on top of other content
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      float: left;
+
+      a {
+        display: block;
+        color: $text-color;
+        text-align: center;
+        padding: $padding;
+        text-decoration: none;
+
+        &:hover {
+          background-color: $hover-background-color;
+        }
+      }
+    }
+  }
+}

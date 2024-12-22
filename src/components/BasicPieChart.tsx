@@ -1,25 +1,25 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import * as d3 from "d3";
-import { PieArcDatum } from "d3-shape";
 import { Types } from "./types";
 
 export const BasicPieChart = (props: IBasicPieChartProps) => {
-  useEffect(() => {
-    draw();
-  });
+  const chartRef = useRef<HTMLDivElement>(null);
 
-  const draw = () => {
-    const innerWidth = props.width - props.left - props.right;
-    const innerHeight = props.height - props.top - props.bottom;
-    const radius = Math.min(innerWidth, innerHeight) / 2;
+  const { width, height, top, right, bottom, left } = props;
+
+  useEffect(() => {
+    // Remove any existing SVG element before creating a new one
+    d3.select(chartRef.current).select('svg').remove();
 
     const svg = d3
-      .select(".basicPieChart")
-      .append("svg")
-      .attr("width", innerWidth)
-      .attr("height", innerHeight)
-      .append("g")
-      .attr("transform", `translate(${innerWidth / 2} ${innerHeight / 2})`);
+      .select(chartRef.current)
+      .append('svg')
+      .attr('width', width)
+      .attr('height', height)
+      .append('g')
+      .attr('transform', `translate(${width / 2}, ${height / 2})`);
+
+    const radius = Math.min(width, height) / 2 - Math.max(top, right, bottom, left);
 
     d3.dsv(
       ",",
@@ -49,8 +49,6 @@ export const BasicPieChart = (props: IBasicPieChartProps) => {
       const pieData = pie(data);
       console.log(pieData);
 
-      // generate the arch SVGs for each pie data
-      // use the color for each name
       const arch = svg
         .selectAll(".arc")
         .data(pieData)
@@ -59,11 +57,11 @@ export const BasicPieChart = (props: IBasicPieChartProps) => {
         .attr("class", "arc")
         .attr("fill", (d) => color(d.data.name) as string);
 
-      arch.append("path").attr("d", path);
+      arch.append("path").attr("d", (d) => path(d as unknown as d3.DefaultArcObject) as string);
     });
-  };
+  }, [width, height, top, right, bottom, left]);
 
-  return <div className="basicPieChart" />;
+  return <div ref={chartRef} className="basicPieChart" />;
 };
 
 interface IBasicPieChartProps {
