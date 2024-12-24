@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import * as d3 from "d3";
 
+// Would be nice to build up to this example: https://observablehq.com/@d3/collision-detection/2?collection=@d3/d3-force
 interface CustomNodeDatum extends d3.SimulationNodeDatum {
   r: number;
   group: number;

@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
 import './MenuBar.scss';
 
+// Maybe tey this:
+//  - https://v2.tauri.app/reference/javascript/api/namespacemenu/
+//  - https://v2.tauri.app/learn/window-customization/
 function MenuBar() {
   return (
     <nav className="menu-bar">
